@@ -1,0 +1,9 @@
+<ul class='subjectList' *ngIf="subjects">
+  <li *ngFor="let subject of subjects">
+    <p>No. <span>{{subject.id}}</span></p>
+    <p>教科名: <span>{{subject.name}}</span></p>
+    <p>作成日時: <span>{{subject.created_at | date:"yyyy/MM/dd（E） hh:mm:ss"}}</span></p>
+  </li>
+</ul>
+
+<button (click)="goBack()">Go Back</button>
